@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="AG" content="guide" />
+    <title>ArmedGeniuses</title>
+    <link rel="icon" href="img/logo.png">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/icon.css" rel="stylesheet" />
+    <link href="css/button.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body class="light">
+
+    <div class="container">
+        <div class="placeholder">
+            <div class="window">
+                <div class="header">
+                    <div class="header-inner" data-aos="flip-up">
+                        <img src="img/logo.png" alt="Logo" class="site-logo" />
+                        <div class="site-text-box">
+                            <h1 class="site-title">Armed Geniuses</h1>
+                            <h6 class="site-description">Ethical Hacking Simplified</h6>
+                        </div>
+                        <nav class="nav">
+                            <ul class="nav-ul">
+                                <li class="nav-li"><a href="index.html" class="nav-link">Home</a></li>
+                                <li class="nav-li"><a href="setup.html" class="nav-link">Get Started</a></li>
+                                <li class="nav-li"><a href="about.html" class="nav-link">About</a></li>
+                                <li class="nav-li"><a href="contact.html" class="nav-link">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn active spacing" id="myBtn" style="--green-color: var(--btn-background); color: var(--btn-color);">
+			<span class="btn__content">Theme</span>
+			<span class="btn__glitch"></span>
+			<span class="btn__label">1337</span>
+		  </button>
+
+		<div id="myModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<span class="close">&times;</span>
+				<h2>Change Theme</h2>
+			  </div>
+			  <div class="modal-body">
+				<br /><br /><a class="theme-btn" id="light" href="#">light ☀️</a> <br />
+				<br /><br /><a class="theme-btn" id="dark" href="#">dark ☾</a> <br /><br />
+			  </div>
+			  
+			</div>
+
+		</div>
+
+        <div>
+            <header class="welcome-section">
+                <h2 class="text-center section-title" style="color: var(--header-color)">Welcome to Armed Geniuses</h2>
+                <p class="text-center">Here we shall talk about basic hacking and penetration testing. You can
+                    choose one of the type of hacks below.</p>
+            </header>
+            <div class="paging-links" data-aos="zoom-in">
+                <nav>
+                    <ul>
+                        <li class="paging-item"><button class="btn" onclick="window.location.href = 'WPA.html';">
+                            <span class="btn__content">WiFi Hacking</span>
+                            <span class="btn__glitch"></span>
+                            <span class="btn__label">1337</span>
+                          </button></li>
+                          <li class="paging-item"><button class="btn" onclick="window.location.href = 'sniff.html';">
+                            <span class="btn__content">WiFi Sniffing</span>
+                            <span class="btn__glitch"></span>
+                            <span class="btn__label">1337</span>
+                          </button></li>
+                          <li class="paging-item"><button class="btn" onclick="window.location.href = 'exploit.html';">
+                            <span class="btn__content">Exploitation</span>
+                            <span class="btn__glitch"></span>
+                            <span class="btn__label">1337</span>
+                          </button></li>
+                          <li class="paging-item"><button class="btn active" onclick="window.location.href = 'recon.html';">
+                            <span class="btn__content">Recon</span>
+                            <span class="btn__glitch"></span>
+                            <span class="btn__label">1337</span>
+                          </button></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="content" data-aos="fade-right">
+                <h4 class="guide-title ">Exploitation with info got from Nmap</h4>
+                <p class="guide-body">
+                    We will be exploiting an application called VSFTPD 2.3.4, which is the vulnerability found in 
+                    metasploitable VM. <br/>
+                    Now, that we know the vulnerability is present in the software, we can go on to exploit it.
+                    We shall use metasploit to exploit it. We shall first search if the exploit for the 
+                    vulnerabilityhas already been written by someone else.<br /><br />
+                    For this, google the 'application name' and 'exploit', to find the exploit for it.
+                    If you're lucky, you may end up with an entire guide from <a href="https://www.rapid7.com">Rapid7</a>, the
+                    makers of Metasploit. In our case, we already do! So let's fire up Metasploit and start exploiting.<br/> <br />
+                    <code class="code">msfconsole</code> 
+                </p>
+            </div>
+            <div class="content" data-aos="fade-left">
+                <p class="guide-body">
+                    Now, we have found the exploit information <a href="https://www.rapid7.com/db/modules/exploit/unix/ftp/vsftpd_234_backdoor">here</a>. 
+                    We shall now go on to use the exploit module. <br /><br />
+                    <code class="code">use exploit/unix/ftp/vsftpd_234_backdoor</code> 
+                    Now, we have to see and set the options for the exploit. Type<br /> <br />
+                    <code class="code">show options</code> 
+                    Set the options for the payload just like how you've learned before. The syntax: <br /><br />
+                    <code class="code">set OPTION VALUE</code>
+                    After doing all this, when everything looks right, you are ready to exploit. <br /><br />
+                    <code class="code">exploit</code>
+                    This should now get you into the target system. It also have poorly configured software, 
+                    and anonymous login is there. So it won't ask you for password credentials too.<br />
+                    You can also see the more detailed method below. (picture source: <a href="https://www.rapid7.com">Rapid7</a>)<br />
+                    <img src="img/vuln_software.jpg" alt="hack procedure" class="img-class history-img" width="70%"
+						height="60%" />
+                </p>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <footer class="footer text-center">
+        <p>From GitHub
+            | View: <a rel="nofollow" href="https://github.com/theParanoidScripts">Here</a></p>
+    </footer>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="js/popup.js" type="text/javascript"></script>
+  <script src="js/theme.js" type="text/javascript"></script>
+</body>
+
+</html>

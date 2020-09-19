@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="AG" content="guide" />
+  <title>ArmedGeniuses</title>
+  <link rel="icon" href="img/logo.png">
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/icon.css" rel="stylesheet" />
+  <link href="css/button.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body class="light">
+
+  <div class="container">
+    <div class="placeholder">
+      <div class="window">
+        <div class="header">
+          <div class="header-inner" data-aos="flip-up">
+            <img src="img/logo.png" alt="Logo" class="site-logo" />
+            <div class="site-text-box">
+              <h1 class="site-title">Armed Geniuses</h1>
+              <h6 class="site-description">Ethical Hacking Simplified</h6>
+            </div>
+            <nav class="nav">
+              <ul class="nav-ul">
+                <li class="nav-li"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-li"><a href="setup.html" class="nav-link">Get Started</a></li>
+                <li class="nav-li"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-li"><a href="contact.html" class="nav-link">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button class="btn active spacing" id="myBtn" style="--green-color: var(--btn-background); color: var(--btn-color);">
+        <span class="btn__content">Theme</span>
+        <span class="btn__glitch"></span>
+        <span class="btn__label">1337</span>
+        </button>
+  
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Change Theme</h2>
+          </div>
+          <div class="modal-body">
+          <br /><br /><a class="theme-btn" id="light" href="#">light ☀️</a> <br />
+          <br /><br /><a class="theme-btn" id="dark" href="#">dark ☾</a> <br /><br />
+          </div>
+          
+        </div>
+  
+      </div>
+      <header class="welcome-section" data-aos="zoom-in">
+        <h2 class="text-center section-title" style="color: var(--header-color)">Welcome to Armed Geniuses</h2>
+        <p class="text-center">Here we shall talk about basic hacking and penetration testing. You can
+          choose one of the type of hacks below.</p>
+      </header>
+      <div class="paging-links">
+        <nav>
+          <ul>
+            <li class="paging-item"><button class="btn" onclick="window.location.href = 'WPA.html';">
+              <span class="btn__content">WiFi Hacking</span>
+              <span class="btn__glitch"></span>
+              <span class="btn__label">1337</span>
+            </button></li>
+            <li class="paging-item"><button class="btn" onclick="window.location.href = 'sniff.html';">
+              <span class="btn__content">WiFi Sniffing</span>
+              <span class="btn__glitch"></span>
+              <span class="btn__label">1337</span>
+            </button></li>
+            <li class="paging-item"><button class="btn" onclick="window.location.href = 'exploit.html';">
+              <span class="btn__content">Exploitation</span>
+              <span class="btn__glitch"></span>
+              <span class="btn__label">1337</span>
+            </button></li>
+            <li class="paging-item"><button class="btn active" onclick="window.location.href = 'recon.html';">
+              <span class="btn__content">Recon</span>
+              <span class="btn__glitch"></span>
+              <span class="btn__label">1337</span>
+            </button></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content" data-aos="fade-right">
+        <h4 class="guide-title ">Collecting Information Using Nmap</h4>
+        <p class="guide-body">You will need kali linux or any other linux distro with the specific tools
+          installed. For kali linux, click on
+          the link below. You will also need kali-linux compatible WiFi adapter for monitor mode and
+          packet sniffing/injection.
+        </p>
+        <button class="btn" onclick="window.location.href = 'https://www.kali.org/downloads/';">
+					<span class="btn__content">Kali linux</span>
+					<span class="btn__glitch"></span>
+					<span class="btn__label">1337</span>
+          </button>  
+      </div>
+      <div class="content" data-aos="fade-left"> 
+      <p class="content">
+        <h3 class="guide-title">How to install the packages</h3>
+        <p class="guide-body">Open the terminal window and install the package if not installed.<br />If
+          you're using Debian or Debian-based distro,
+          type:<br /><br />
+          <code class="code">apt update && apt install nmap</code></p>
+        <p class="guide-body">
+          If you're using Arch linux (you're awesome), then use pacman to install the tools.
+          <code class="code">pacman -S nmap</code>
+        </p>
+      </div>   
+        <br />
+        <div class="content" data-aos="fade-right">
+        <h3 class="guide-title">Configuring the Network</h3> <br />
+        <p class="guide-body">
+          You're better off doing this test using a virtual machine. Go to the setup page
+          <a href="setup.html">here</a> to set up your penetration testing lab. <br />
+        </p>
+        </div>
+        <div class="content" data-aos="fade-left">
+        <h3 class="guide-title">Scanning the Target</h3> <br />
+        <p class="guide-body">
+          Now, you should configure kali/attacker machine and metasploitable to be connected to the same network.
+          Only then can we run the nmap script.<br/>
+          Now that they're on the same internal network, launch both the machines and try to ping the IP 
+          addresses of each other. For eg, let the kali IP be 10.0.2.5 and metasploitablebe 10.0.2.15.
+          In the kali machine, type:
+          <code class="code">ping 10.0.2.15</code>
+          If you receive any response, then you are connected on the same network. You can try the same on 
+          the metasploitable machine as well, replacing the IP as that of the kali IP.<br /> <br />
+          You can now launch nmap to scan the ports for vulnerabilities. Type:
+          <code class="code">nmap -T4 -A -v 10.0.2.15</code>
+          This will now start scanning the metasploitable machine. When the scan is complete,
+          you will be informed about all the vulnerabilities in that specific machine.<br />
+          To further exploit one vulnerability, you can navigate to the link below:<br /> <br />
+          <button class="btn" onclick="window.location.href = 'vuln.html';">
+            <span class="btn__content">Exploitation of Vulnerable Code</span>
+            <span class="btn__glitch"></span>
+            <span class="btn__label">1337</span>
+            </button>
+        </p>
+      </div>
+        <br />
+        <br />
+    </p>
+    </div>
+  </div>
+  </div>
+  </main>
+
+  <footer class="footer text-center">
+    <p>From GitHub
+      | View: <a rel="nofollow" href="https://github.com/theParanoidScripts">Here</a></p>
+  </footer>
+  </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="js/popup.js" type="text/javascript"></script>
+  <script src="js/theme.js" type="text/javascript"></script>
+</body>
+
+</html>

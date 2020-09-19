@@ -1,0 +1,79 @@
+/* Icon for social CSS file */
+
+.lnk {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1
+}
+
+
+/* codes for different social icons */
+
+
+/* Credits: StackOverflow, fontawesome */
+
+.dev:before {
+    content: "\f6cc"
+}
+
+.discord:before{
+    content:"\f392"
+}
+
+.linkedin:before{
+    content:"\f08c"
+}
+
+.linkedin-in:before{
+    content:"\f0e1"
+}
+
+.envelope:before {
+    content: "\f0e0"
+}
+
+.github:before {
+    content: "\f09b"
+}
+
+.medium:before {
+    content: "\f23a"
+}
+
+.phone:before {
+    content: "\f095"
+}
+
+.youtube:before {
+    content: "\f167"
+}
+
+@font-face {
+    font-family: "Courier";
+    font-style: normal;
+    font-weight: normal;
+    font-display: auto;
+    src: url(../webfonts/fa-brands-400.ttf) format("truetype")/* the location of the .ttf file */
+}
+
+@font-face {
+    font-family: "Courier";
+    font-style: normal;
+    font-weight: 900;
+    font-display: auto;
+    src: url(../webfonts/fa-solid-900.ttf) format("truetype")
+}
+
+.lnk {
+    font-family: "Courier"
+}
+
+.cnt {
+    font-family: "Courier"
+}
+
+.cnt {
+    font-weight: 900
+}
