@@ -11,8 +11,6 @@ An ethical hacking guide/site made using HTML, CSS and JS.
 
 ![Image of site1](https://github.com/theParanoidScripts/ArmedGeniuses/blob/master/img/screenshots/pic1.png)
 
-![Image of site2](https://github.com/theParanoidScripts/ArmedGeniuses/blob/master/img/screenshots/pic2.png)
-
 ![Image of site3](https://github.com/theParanoidScripts/ArmedGeniuses/blob/master/img/screenshots/pic3.png)
 
 ![Image of site4](https://github.com/theParanoidScripts/ArmedGeniuses/blob/master/img/screenshots/pic4.png)
