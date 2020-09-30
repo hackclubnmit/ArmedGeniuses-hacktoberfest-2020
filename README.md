@@ -5,7 +5,7 @@ An ethical hacking guide/site made using HTML, CSS and JS.
 ### What's new:
 
 - The Dark mode and Light mode toggle has now been introduced. It will be persistent and be applied to all the pages of the web page even when the page is refreshed.
-- Your feedback is now stored in the browser local cache, so when you give in the feedback, the messsage is not stored as a text file in your system. This is made so that new feedback can keep coming in.
+- Your feedback is now stored in the browser local cache, so when you give in the feedback, the message is not stored as a text file in your system. This is made so that new feedback can keep coming in.
 
 ### Screenshots:
 
