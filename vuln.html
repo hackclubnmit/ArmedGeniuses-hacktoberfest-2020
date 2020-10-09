@@ -21,8 +21,8 @@
                     <div class="header-inner" data-aos="flip-up">
                         <img src="img/logo.png" alt="Logo" class="site-logo" />
                         <div class="site-text-box">
-                            <h1 class="site-title">Armed Geniuses</h1>
-                            <h6 class="site-description">Ethical Hacking Simplified</h6>
+                            <h1 class="site-title"><b>Armed Geniuses</b></h1>
+                            <h6 class="site-description"><b>Ethical Hacking Simplified</b></h6>
                         </div>
                         <nav class="nav">
                             <ul class="nav-ul">
@@ -61,11 +61,14 @@
 
         <div>
             <header class="welcome-section">
-                <h2 class="text-center section-title" style="color: var(--header-color)">Welcome to Armed Geniuses</h2>
+                <div class="p">
+                <h2 class="text-center section-title" style="color: var(--header-color)"><b>Welcome to Armed Geniuses</b></h2>
                 <p class="text-center">Here we shall talk about basic hacking and penetration testing. You can
                     choose one of the type of hacks below.</p>
+</div>
             </header>
             <div class="paging-links" data-aos="zoom-in">
+                <div class="p">
                 <nav>
                     <ul>
                         <li class="paging-item"><button class="btn" onclick="window.location.href = 'WPA.html';">
@@ -87,13 +90,14 @@
                             <span class="btn__content">Recon</span>
                             <span class="btn__glitch"></span>
                             <span class="btn__label">1337</span>
-                          </button></li>
+                          </button></li></div>
                     </ul>
                 </nav>
             </div>
 
             <div class="content" data-aos="fade-right">
-                <h4 class="guide-title ">Exploitation with info got from Nmap</h4>
+                <div class="p">
+                <h4 class="guide-title "><b>Exploitation with info got from Nmap</b></h4>
                 <p class="guide-body">
                     We will be exploiting an application called VSFTPD 2.3.4, which is the vulnerability found in 
                     metasploitable VM. <br/>
@@ -102,12 +106,13 @@
                     vulnerabilityhas already been written by someone else.<br /><br />
                     For this, google the 'application name' and 'exploit', to find the exploit for it.
                     If you're lucky, you may end up with an entire guide from <a href="https://www.rapid7.com">Rapid7</a>, the
-                    makers of Metasploit. In our case, we already do! So let's fire up Metasploit and start exploiting.<br/> <br />
+                    makers of Metasploit. In our case, we already do! So let's fire up Metasploit and start exploiting.<br/> <br /></p></div>
                     <code class="code">msfconsole</code> 
                 </p>
             </div>
             <div class="content" data-aos="fade-left">
                 <p class="guide-body">
+                    <div class="p">
                     Now, we have found the exploit information <a href="https://www.rapid7.com/db/modules/exploit/unix/ftp/vsftpd_234_backdoor">here</a>. 
                     We shall now go on to use the exploit module. <br /><br />
                     <code class="code">use exploit/unix/ftp/vsftpd_234_backdoor</code> 
@@ -122,7 +127,7 @@
                     You can also see the more detailed method below. (picture source: <a href="https://www.rapid7.com">Rapid7</a>)<br />
                     <img src="img/vuln_software.jpg" alt="hack procedure" class="img-class history-img" width="70%"
 						height="60%" />
-                </p>
+                </p></div>
             </div>
         </div>
     </div>

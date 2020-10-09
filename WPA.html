@@ -11,7 +11,20 @@
 	<link href="css/button.css" rel="stylesheet" />
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
-
+<style>
+.p{
+margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width:1220px) {
+  .p {
+    
+   margin-left: auto;
+  margin-right: auto;
+  font-size: 28px
+justify-content: center;
+}
+</style>
 <body class="light">
 
 	<div class="container">
@@ -21,8 +34,8 @@
 					<div class="header-inner" data-aos="flip-up">
 						<img src="img/logo.png" alt="Logo" class="site-logo" />
 						<div class="site-text-box">
-							<h1 class="site-title">ArmedGeniuses</h1>
-							<h6 class="site-description">Ethical Hacking Simplified</h6>
+							<h1 class="site-title"><b>ArmedGeniuses</b></h1>
+							<h6 class="site-description"><b>Ethical Hacking Simplified</b></h6>
 						</div>
 						
 						<nav class="nav">
@@ -62,9 +75,9 @@
 		</div>
 		<p>
 			<header class="welcome-section">
-				<h2 class="text-center section-title" style="color: var(--header-color)">Welcome to Armed Geniuses</h2>
-				<p class="text-center">Here we shall talk about basic hacking and penetration testing. You can
-					choose one of the type of hacks below.</p>
+				<h2 class="text-center section-title" style="color: var(--header-color)"><b>Welcome to Armed Geniuses</b></h2>
+				<p class="text-center"><div class="p">Here we shall talk about basic hacking and penetration testing. You can
+					choose one of the type of hacks below.</div></b></p>
 			</header>
 			<div class="paging-links" data-aos="zoom-in">
 				<nav>
@@ -94,11 +107,11 @@
 			</div>
 
 			<div class="content" data-aos="fade-right">
-				<h4 class="guide-title ">Wifi hacking using Aircrack-ng</h4>
-				<p class="guide-body">You will need kali linux or any other linux distro with the specific tools
+				<h4 class="guide-title "><b>Wifi hacking using Aircrack-ng</b></h4>
+				<p class="guide-body"><div class="p">You will need kali linux or any other linux distro with the specific tools
 					installed. For kali linux, click on
 					the link below. You will also need kali-linux compatible WiFi adapter for monitor mode and
-					packet sniffing/injection.
+					packet sniffing/injection.</div>
 				</p>
 				<button class="btn" onclick="window.location.href = 'https://www.kali.org/downloads/';">
 					<span class="btn__content">Kali linux</span>
@@ -107,14 +120,14 @@
 				  </button>
 			</div>
 			<div class="content" data-aos="fade-left">
-				<h3 class="guide-title">How to install the packages</h3>
-				<p class="guide-body">Open the terminal window and install the package if not installed.<br />If
-					you're using Debian or Debian-based distro,
+				<h3 class="guide-title"><b>How to install the packages</b></h3>
+				<p class="guide-body"><div class="p">Open the terminal window and install the package if not installed.<br />If
+					you're using Debian or Debian-based distro,</div>
 					type:<br /><br />
-					<code class="code">apt update && apt install aircrack-ng</code></p>
+					<code class="code"><div class="p">apt update && apt install aircrack-ng</div></code></p>
 				<p class="guide-body">
-					If you're using Arch linux (you're awesome), then use pacman to install the tools.
-					<code class="code">pacman -S aircrack</code>
+					<div class="p">If you're using Arch linux (you're awesome), then use pacman to install the tools.
+					<code class="code">pacman -S aircrack</div class="p"></code>
 				</p>
 			</div>
 			<div class="content" data-aos="fade-right">
@@ -125,6 +138,7 @@
 					Now type,
 					<code class="code">ifconfig</code>
 					<code class="code">
+						<div class="p">
 						<br />wlan0: flags=4163 [UP,BROADCAST,RUNNING,MULTICAST] mtu 1500
 						<br /> inet ***.***.*.* netmask ***.***.***.* broadcast ***.***.*.***
 						<br /> inet6 ****::****:****:****:**** prefixlen 64 scopeid 0x20[link]
@@ -133,7 +147,9 @@
 						<br /> RX errors 0 dropped 0 overruns 0 frame 0
 						<br /> TX packets 9568 bytes 1148202 (1.0 MiB)
 						<br /> TX errors 0 dropped 0 overruns 0 carrier 0 collisions 0
+					</div>
 					</code>
+					<div class="p">
 					Your output will look something like the above. Now, you
 					will have to put your adapter in monitor mode. For me,
 					the wireless adapter is "wlan0". Hence
@@ -149,12 +165,12 @@
 					to test,
 					press Ctrl + C to stop the scan.
 					Note down the BSSID and CHANNEL NO. too.
-					<br />
+					</div><br />
 				</p>
 			</div>
 			<div class="content" data-aos="fade-left">
-					<h3 class="guide-title">Capturing Handshake and Cracking</h3> <br />
-				<p class="guide-body">
+					<h3 class="guide-title"><b>Capturing Handshake and Cracking</h3> </b><br />
+				<p class="guide-body"><div class="p">
 					Now, we shall deauthenticate a user for a brief time from the network, and get
 					him connected again, capturing the WPA-handshake, which will contain important information
 					like passwords, and credentials in it in an encrypted format.
@@ -172,7 +188,7 @@
 					<code class="code">ls</code>
 					Now, you will a wordlist to bruteforce the common passwords used for the key.<br />
 					If you don't already have a wordlist with you, you can download one from the below button.
-					<br />
+					</div><br />
 					<br />
 					<button class="btn" onclick="window.location.href = 'https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt';">
 						<span class="btn__content">Wordlist</span>
@@ -184,7 +200,7 @@
 				</p>
 			</div>
 			<div class="content" data-aos="fade-right">
-				<p class="guide-body">
+				<p class="guide-body"><div class="p">
 					Now, we have all the resources we need. We can start bruteforcing.<br />
 					An important thing to remember, the probability of the password to be cracked is determined
 					by how common and how easy the password is to guess. The downloaded wordlist has them,
@@ -196,7 +212,7 @@
 					<code class="code">aircrack-ng [filename].cap -w [wordlist directory].txt</code>
 					Now if you're lucky, you may have successfully hacked into the victims network.
 					Again as a reminder, please test the above method <b>IF YOU HAVE PERMISSION</b> to
-					do so. We are not responsible for the consequences.
+					do so. We are not responsible for the consequences.</div>
 					<br />
 					<br />
 					<br />
